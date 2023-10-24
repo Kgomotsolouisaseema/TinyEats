@@ -1,8 +1,9 @@
 import React from 'react';
 import {Text, StyleSheet, View, Image} from 'react-native';
 import {SafeAreaView} from 'react-native-safe-area-context';
-import COLORS from '../../consts/colors';
+import COLORS from '../consts/COLORS';
 import {PrimaryButton} from '../components/Button';
+import OnBoardImg from "../../../assets/Onboard.jpg"
 
 const OnBoardScreen = ({navigation}) => {
   return (
@@ -14,7 +15,7 @@ const OnBoardScreen = ({navigation}) => {
             resizeMode: 'contain',
             top: -150,
           }}
-          source={require('../../assets/onboardImage.png')}
+          source={OnBoardImg}
         />
       </View>
       <View style={style.textContainer}>
